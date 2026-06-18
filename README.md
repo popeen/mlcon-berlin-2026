@@ -28,6 +28,11 @@ need all of it for any single demo.
   really is (tokenisation → embeddings → attention → decoding), and running
   models locally, remotely and in the cloud. See the
   [Day‑1 README](day-1/README.md) for a guided tour of every script.
+- **[day-2/](day-2/)** — building with LLMs: RAG (retrieval‑augmented
+  generation), summarisation / data extraction / sentiment, structured JSON
+  output, code generation → vibe coding, tool / function calling, the Model
+  Context Protocol (MCP), and modern agents. See the
+  [Day‑2 README](day-2/README.md) for a guided tour of every script.
 
 ---
 John Davies · [john.davies@incept5.com](mailto:john.davies@incept5.com)
