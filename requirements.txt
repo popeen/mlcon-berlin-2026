@@ -36,5 +36,6 @@ llama-cpp-python   # logit_probabilities.py; needs a C/C++ toolchain to build
 # --- LM Studio Python SDK (getting_started_lm_studio.py) ---
 lmstudio
 
-# --- Apple Silicon ONLY — uncomment for the MLX path in three_local_backends.py ---
-# mlx-vlm
+# --- Apple Silicon ONLY — the MLX path in three_local_backends.py ---
+# Marker means pip installs it only on Apple Silicon Macs and skips it elsewhere.
+mlx-vlm; platform_machine == "arm64" and sys_platform == "darwin"

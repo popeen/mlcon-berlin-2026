@@ -6,3 +6,4 @@ venv/
 .env
 TEACHER_NOTES.md
 .idea/
+/day-1/embeddings.pkl
