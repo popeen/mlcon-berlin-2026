@@ -37,7 +37,9 @@ months is "too old"):
 - Embeddings: `all-minilm`, `embeddinggemma`.
 
 **Cloud keys** — the cloud scripts call `load_dotenv()`, so put the matching key
-in a `.env` file in this directory:
+in a `.env` file in the **repo root** (copy `../.env.example` to `../.env`). Run
+the scripts from the repo root — e.g. `python day-1/basic_chatGPT.py` — so the
+`.env` is picked up:
 
 ```
 OPENAI_API_KEY=...
