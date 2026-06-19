@@ -122,9 +122,9 @@ pip install requests python-dotenv ollama openai numpy tabulate rich
 Most demos call a local model. Install whichever the script uses (see the
 prerequisites table in [`day-1/README.md`](day-1/README.md)):
 
-- **Ollama** (`localhost:11434`) — install from <https://ollama.com>, then
+- **Ollama** (`127.0.0.1:11434`) — install from <https://ollama.com>, then
   `ollama pull qwen3.5:4b` and `ollama pull all-minilm`.
-- **LM Studio** (`localhost:1234`) — install, download a model, start the local
+- **LM Studio** (`127.0.0.1:1234`) — install, download a model, start the local
   server.
 
 ## Cloud API keys
@@ -172,6 +172,12 @@ python day-1/<script>.py
 - **`llama-cpp-python` fails to build** — install a C/C++ toolchain (see Option A),
   or comment that line out if you don't need `logit_probabilities.py`.
 - **PyPI blocked by a corporate proxy** — `pip install --proxy http://user:pass@host:port -r requirements.txt`.
+- **`403 Forbidden` from Ollama/LM Studio (often while on a VPN)** — the server
+  rejects the request because the VPN reroutes `localhost`. The scripts use the
+  literal loopback IP `127.0.0.1` to avoid this. If you still hit a 403, either
+  set `OLLAMA_ORIGINS="*"` and restart Ollama (`ollama serve`), or exclude
+  `127.0.0.1` from the VPN tunnel / briefly disable the VPN — loopback traffic
+  never leaves your machine anyway.
 
 ## Using PyCharm instead?
 

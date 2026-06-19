@@ -17,7 +17,7 @@ def encode_image_to_base64(image_path):
 
 
 def send_request(model, prompt, image_path=None):
-    url = "http://localhost:11434/api/chat"
+    url = "http://127.0.0.1:11434/api/chat"
 
     images = []
     if image_path:

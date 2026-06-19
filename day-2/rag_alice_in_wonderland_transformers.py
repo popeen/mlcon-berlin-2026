@@ -47,7 +47,7 @@ class TransformerEmbedder:
 class OllamaLLM:
     def __init__(self, model: str = LLM_MODEL):
         self.model = model
-        self.base_url = "http://localhost:11434/api"
+        self.base_url = "http://127.0.0.1:11434/api"
 
     def generate_response(self, prompt: str) -> str:
         data = {

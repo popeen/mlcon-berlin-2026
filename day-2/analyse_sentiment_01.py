@@ -9,7 +9,7 @@ def analyse_sentiment(text, model="qwen3.5:4b"):
     Sentiment:
     """
 
-    url = "http://localhost:11434/api/generate"
+    url = "http://127.0.0.1:11434/api/generate"
     payload = {"model": model, "prompt": prompt, "stream": False, "think": False}
 
     try:

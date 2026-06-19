@@ -90,7 +90,7 @@ def distance_tool(location: str) -> int:
 
 def get_available_models() -> list:
     try:
-        response = requests.get('http://localhost:11434/api/tags')
+        response = requests.get('http://127.0.0.1:11434/api/tags')
         models = response.json()['models']
         return models
     except requests.RequestException as e:

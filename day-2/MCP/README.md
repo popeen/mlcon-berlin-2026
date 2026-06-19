@@ -245,7 +245,7 @@ max_iterations = 10  # Increase for more complex questions
 
 ### Ollama Not Running
 ```
-❌ Error: Cannot connect to Ollama at http://localhost:11434
+❌ Error: Cannot connect to Ollama at http://127.0.0.1:11434
 ```
 **Solution**: Start Ollama with `ollama serve`
 

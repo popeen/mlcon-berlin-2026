@@ -23,8 +23,8 @@ Most demos talk to a model. Depending on the script you need one (or more) of:
 
 | Backend | How to get it | Used by |
 |---|---|---|
-| **Ollama** (`localhost:11434`) | Install from <https://ollama.com>, then `ollama pull qwen3.5:4b` and `ollama pull all-minilm` | most local demos |
-| **LM Studio** (`localhost:1234`, OpenAI‑compatible) | Install, download `qwen3.5-4b`, start the local server | `getting_started_lm_studio.py`, `three_local_backends.py` |
+| **Ollama** (`127.0.0.1:11434`) | Install from <https://ollama.com>, then `ollama pull qwen3.5:4b` and `ollama pull all-minilm` | most local demos |
+| **LM Studio** (`127.0.0.1:1234`, OpenAI‑compatible) | Install, download `qwen3.5-4b`, start the local server | `getting_started_lm_studio.py`, `three_local_backends.py` |
 | **MLX** | Apple‑Silicon only; weights load straight from disk | `three_local_backends.py` |
 | **llama.cpp** | `pip install llama-cpp-python`, plus a local `.gguf` | `logit_probabilities.py` |
 | **Cloud APIs** | An API key per provider (see below) | `basic_*.py`, `*_groq.py`, `together_chat.py` |

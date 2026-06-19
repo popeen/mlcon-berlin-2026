@@ -5,7 +5,7 @@ from pathlib import Path
 
 EMBEDDING_MODEL = "embeddinggemma"
 LLM_MODEL = "qwen3.5:4b"
-OLLAMA_URL = "http://localhost:11434/api"
+OLLAMA_URL = "http://127.0.0.1:11434/api"
 HERE = Path(__file__).parent
 
 

@@ -20,7 +20,7 @@ def encode_image_to_base64(image_path):
 
 
 def send_request(model, prompt, image_path=None):
-    url = "http://localhost:1234/v1/chat/completions"
+    url = "http://127.0.0.1:1234/v1/chat/completions"
 
     user_content = [{"type": "text", "text": prompt}]
 

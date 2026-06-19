@@ -20,7 +20,7 @@ class Document:
 
 class OllamaClient:
     def __init__(self):
-        self.base_url = "http://localhost:11434/api"
+        self.base_url = "http://127.0.0.1:11434/api"
 
     def ensure_models(self, models: List[str]) -> None:
         """Pull any required models that aren't installed yet, showing download

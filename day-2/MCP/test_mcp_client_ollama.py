@@ -5,7 +5,7 @@ from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+OLLAMA_URL = "http://127.0.0.1:11434/api/chat"
 MODEL = "qwen3.5:4b"
 
 
@@ -148,7 +148,7 @@ async def run_mcp_demo_with_ollama():
 
 async def check_ollama_availability():
     try:
-        response = requests.get("http://localhost:11434/api/tags", timeout=5)
+        response = requests.get("http://127.0.0.1:11434/api/tags", timeout=5)
         response.raise_for_status()
 
         models_data = response.json()
@@ -163,7 +163,7 @@ async def check_ollama_availability():
         return True
 
     except requests.exceptions.RequestException as e:
-        print(f"Error: Cannot connect to Ollama at http://localhost:11434")
+        print(f"Error: Cannot connect to Ollama at http://127.0.0.1:11434")
         print(f"Make sure Ollama is running with: ollama serve")
         print(f"Error details: {e}")
         return False

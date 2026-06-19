@@ -1,7 +1,7 @@
 import requests
 
 response = requests.post(
-    "http://localhost:11434/api/generate",
+    "http://127.0.0.1:11434/api/generate",
     json={"model": "qwen3.5:4b", "prompt": "Hello",
           "stream": False, "Think": False }
 )

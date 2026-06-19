@@ -53,7 +53,7 @@ average hourly rate for people working in the LAPD for each year\n\n{schema}"""
         prompt += f"\n\nSample rows:\n{sample_data}"
 
     response = requests.post(
-        'http://localhost:11434/api/generate',
+        'http://127.0.0.1:11434/api/generate',
         json={
             "model": "qwen3.5:4b",
             "prompt": prompt,

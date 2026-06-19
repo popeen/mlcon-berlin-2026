@@ -5,7 +5,7 @@ import requests
 def get_ollama_embedding(text: str) -> list:
     data = {"model": "all-minilm", "prompt": text}
     try:
-        response = requests.post("http://localhost:11434/api/embeddings", json=data)
+        response = requests.post("http://127.0.0.1:11434/api/embeddings", json=data)
         response.raise_for_status()
         return response.json()["embedding"]
     except Exception as e:

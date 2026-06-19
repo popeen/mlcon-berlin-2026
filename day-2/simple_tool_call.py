@@ -1,7 +1,7 @@
 import json
 import requests
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+OLLAMA_URL = "http://127.0.0.1:11434/api/chat"
 MODEL = "qwen3.5:4b"
 
 
