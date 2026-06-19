@@ -12,9 +12,12 @@ modern **agents**.
 The recurring theme: almost everything here can be done **locally, privately and
 cheaply** with small open‑weight models — you don't need a frontier API.
 
-Every file is a **standalone program** — there is no build step, no shared
-`requirements.txt` and no package to install. Run each one directly with
-`python <script>.py`; it pulls in only the libraries that one demo needs.
+Every file is a **standalone program** — there is no build step and no package to
+install. Run each one directly with `python <script>.py`; it pulls in only the
+libraries that one demo needs. [`requirements.txt`](requirements.txt) in this
+folder is a convenience superset that installs everything Day 2 needs at once
+(`pip install -r day-2/requirements.txt`); you don't need all of it for any single
+demo.
 
 ## Prerequisites
 

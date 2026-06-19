@@ -19,8 +19,14 @@ source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-`requirements.txt` is a convenience superset that lets every script run; you don't
-need all of it for any single demo.
+`requirements.txt` is a convenience superset that lets every **Day-1** script run;
+you don't need all of it for any single demo. Day 2 adds RAG, MCP, vision and
+other dependencies — install those with
+[`day-2/requirements.txt`](day-2/requirements.txt):
+
+```bash
+pip install -r day-2/requirements.txt
+```
 
 ## Contents
 
